@@ -234,7 +234,7 @@ add_action('admin_menu', 'keycloak_sso_menu');
 
 function get_keycloak_config() {
     $options = get_option('keycloak_sso_settings');
-    // hardcoded calback uri
+    // hardcoded callback uri
     $options['redirect_uri'] = site_url('/keycloak-sso-callback');
     return $options;
 }
